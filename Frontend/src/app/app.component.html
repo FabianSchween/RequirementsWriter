@@ -1,0 +1,20 @@
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand-card compact">
+      <p class="eyebrow">EARS Studio</p>
+      <h1>{{ store.text.appTitle }}</h1>
+    </div>
+
+    <nav class="nav-list horizontal">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ store.text.home }}</a>
+      <a routerLink="/requirements" routerLinkActive="active">{{ store.text.createRequirement }}</a>
+      <a routerLink="/management" routerLinkActive="active">{{ store.text.management }}</a>
+      <a routerLink="/dashboard" routerLinkActive="active">{{ store.text.dashboard }}</a>
+      <a routerLink="/export" routerLinkActive="active">{{ store.text.export }}</a>
+    </nav>
+  </header>
+
+  <main class="app-content full-width">
+    <router-outlet />
+  </main>
+</div>
