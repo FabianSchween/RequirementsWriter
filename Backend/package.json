@@ -1,0 +1,9 @@
+{
+  "name": "requirements-writer-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal REST backend for the Requirements Writer MVP",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
